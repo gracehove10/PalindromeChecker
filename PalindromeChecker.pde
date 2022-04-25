@@ -14,16 +14,29 @@ public void setup()
     }
   }
 }
+
 public boolean palindrome(String word)
 {
-  //your code here
+  word.toLowerCase();
+  String s = "";
+for(int i = 0; i<word.length(); i++){
+  
+  char c = word.charAt(i);
+  if(c  !=' '){
+    
+   s += c; 
+  }
+  s = word;
+}
+  String backwards = "";
+  for(int i = word.length()-1; i>=0;i--)
+  {
+    backwards+= word.charAt(i);
+    
+  }
+  if(backwards.equals(word)){
+   return true; 
+  }
   return false;
 }
-public String reverse(String str)
-{
-    String sNew = new String();
-    //your code here
-    return sNew;
-}
-
 
